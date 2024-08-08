@@ -1,13 +1,15 @@
 // import Image from "next/image";
+"use client";
 import React from "react";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import HeroSection from "./components/heroSection";
 import WorkShowcase from "./components/workShowcase";
+import { CldImage, getCldImageUrl } from "next-cloudinary";
 
 export default function Home(): JSX.Element {
   return (
-    <main className="bg-white">
+    <main className="bg-black">
       <Header />
       <HeroSection />
       <WorkShowcase />
