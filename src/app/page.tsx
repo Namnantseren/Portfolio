@@ -9,7 +9,13 @@ import { CldImage, getCldImageUrl } from "next-cloudinary";
 
 export default function Home(): JSX.Element {
   return (
-    <main className="bg-black">
+    <main
+      className="bg-black"
+      // style={{
+      //   backgroundImage:
+      //     "url(https://res.cloudinary.com/djkb0iudu/image/upload/v1722754353/overlay)",
+      // }}
+    >
       <Header />
       <HeroSection />
       <WorkShowcase />

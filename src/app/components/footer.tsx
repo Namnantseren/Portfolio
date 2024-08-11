@@ -5,7 +5,9 @@ export default function Footer(): JSX.Element {
     <footer className="flex w-full bg-green-500 flex justify-center">
       <div className="h-[398px] flex items-center">
         <div>
-          <div>Logo</div>
+          <div>
+            <p>Logo</p>
+          </div>
           <div></div>
         </div>
         <div></div>

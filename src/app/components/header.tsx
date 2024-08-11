@@ -17,14 +17,19 @@ export default function Header(): JSX.Element {
   // });
 
   return (
-    <header className="fixed w-full z-10 h-[168px]  ">
-      <div className=" h-[143px] nav-bar flex justify-between items-center  px-[48px] bg-gradient-to-b from-black via-transparent to-transparent top-[-5] ">
-        <div className="nav-left">Logo made by namka</div>
-        <nav className="nav-mid w-[180px] h-[56px] flex justify-center bg-gray-500 gap-1 rounded-[24px] items-center">
-          <button className="w-[80px] h-[36px] bg-[#84cc16] rounded-[24px]">
+    <header className="fixed w-full z-10 h-[168px]   ">
+      <div className=" h-[143px] nav-bar flex justify-between items-center px-[48px] bg-gradient-to-b from-black via-transparent to-transparent  ">
+        <div className="nav-left ">Logo made by namka</div>
+        <nav className="nav-mid w-[180px] h-[46px] border-[1px] flex justify-center bg-gray-500/60 backdrop-blur-2xl  gap-1 rounded-[24px] items-center">
+          <button className="w-[80px] h-[36px]  rounded-[24px] bg-gray-500/60">
             work
           </button>
-          <button className="w-[80px] h-[36px] bg-[#84cc16] rounded-[24px]">
+          <button
+            className="w-[80px] h-[36px] bg-gray-500/60 rounded-[24px]"
+            onClick={() => {
+              "/about";
+            }}
+          >
             info
           </button>
         </nav>
